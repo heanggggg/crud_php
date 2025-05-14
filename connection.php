@@ -1,9 +1,9 @@
 <?php
 function connection() {
-    $host = "localhost";
-    $username = "root";
-    $password = ""; // Leave empty if no password
-    $database = "db_crud";
+    $host = "sql101.infinityfree.com";
+    $username = "if0_38981129";
+    $password = "USt3BA1rJFvJR"; 
+    $database = "if0_38981129_db_crud";
 
     $conn = new mysqli($host, $username, $password, $database);
 

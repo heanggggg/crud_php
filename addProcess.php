@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 
 
 $conn = connection();
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = $conn->prepare("INSERT INTO tb_student (first_name, last_name, gender, email, dob, address, image, active) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("sssssssi", $first_name, $last_name, $gender, $email, $dob, $address, $fileName, $active);
             if ($stmt->execute()) {
-               header("Location:home.php");
+               header("Location:index.php");
             } else {
                 echo "Error: " . $stmt->error;
             }

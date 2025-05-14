@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 
 // Number of records per page
 $limit = 5;
@@ -123,7 +123,7 @@ $result = $conn->query($sql_query);
             <td><?php echo $row['last_name']; ?></td>
             
             <td>
-              <img src="./uploads/<?php echo $row['image']; ?>" alt="Employee Image" width="45" height="45" class="rounded-circle border border-secondary shadow-sm">
+              <img src="uploads/<?php echo $row['image']; ?>" alt="Employee Image" width="45" height="45" class="rounded-circle border border-secondary shadow-sm">
             </td>
             <td><?php echo $row['gender']; ?></td>
             <td><?php echo $row['email']; ?></td>

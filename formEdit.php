@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 
 if (!isset($_GET['id'])) {
     echo "No ID specified.";
@@ -76,7 +76,7 @@ $row = mysqli_fetch_assoc($result);
                     <label for="image" class="form-label">Upload New Image</label>
                     <input class="form-control" type="file" accept="image/*" id="image" name="image">
                     <div class="mt-2">
-                        <img src="./uploads/<?php echo $row['image']; ?>" width="80" class="rounded border" alt="Current Image">
+                        <img src="uploads/<?php echo $row['image']; ?>" width="80" class="rounded border" alt="Current Image">
                         <input type="hidden" name="old_image" value="<?php echo $row['image']; ?>">
                     </div>
                 </div>

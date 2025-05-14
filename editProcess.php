@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 
 $conn = connection();
 if ($conn->connect_error) {
@@ -48,7 +48,7 @@ if ($stmt->execute()) {
                 icon: "success",
                 confirmButtonText: "OK"
             }).then(() => {
-                window.location.href = "home.php";
+                window.location.href = "index.php";
             });
         </script>
     </body>

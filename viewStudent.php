@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 $conn = connection();
 
 if (isset($_GET['id'])) {
@@ -94,7 +94,7 @@ if (isset($_GET['id'])) {
   <h3>STUDENT ID CARD</h3>
   <div class="row align-items-center">
     <div class="col-md-4 text-center">
-      <img src="./uploads/<?php echo $row['image']; ?>" alt="Student Photo" class="id-photo mb-3">
+      <img src="uploads/<?php echo $row['image']; ?>" alt="Student Photo" class="id-photo mb-3">
     </div>
     <div class="col-md-8">
       <p><span class="label">NAME:</span> <span class="value"><?php echo $row['first_name'] . ' ' . $row['last_name']; ?></span></p>

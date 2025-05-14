@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("./connection.php");
 $conn = connection();
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -23,7 +23,7 @@ if (isset($_GET["id"])) {
                     icon: "success",
                     confirmButtonText: "OK"
                 }).then(() => {
-                    window.location.href = "home.php";
+                    window.location.href = "index.php";
                 });
             </script>
         </body>
